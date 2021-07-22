@@ -100,3 +100,41 @@ body {
     text-decoration: underline;
   }
 }
+
+@media (max-width: 768px) {
+  .titleSection {
+    font-size: 3em;
+  }
+
+  .logo-in-header {
+    height: 1em;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .buy-button {
+    margin-bottom: 0px;
+  }
+
+  .lamb-jump-animation-wrapper {
+    margin: -40px auto;
+  }
+}
+
+.githublink {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.githublinkimage {
+  width: 30px;
+  transition: all 300ms;
+
+  &:hover {
+    transition: all 300ms;
+    transform: scale(1.05);
+  }
+}

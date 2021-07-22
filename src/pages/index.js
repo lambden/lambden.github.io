@@ -5,7 +5,9 @@ import lambAnimation from "../animations/lambAnimation.json";
 import '../scss/main.scss';
 import 'aos/dist/aos.css';
 import logo from '../images/logo.png';
+import github from '../images/github.png';
 import CountUp from 'react-countup';
+import Helmet from 'react-helmet';
 
 const options = {
   animationData: lambAnimation,
@@ -52,6 +54,8 @@ const IndexPage = () => {
   const lottieRef = React.useRef();
   return (
     <main style={pageStyles}>
+        <a className="githublink" target="_blank" href="https://github.com/lambden"><img className="githublinkimage" src={github}/></a>
+        <Helmet title="LAMBden" defer={false} />
         <div className='titleSection' data-aos='fade-down'>
           LAMBden
           <img src={logo} className='logo-in-header'/>
@@ -60,7 +64,7 @@ const IndexPage = () => {
           The first actively deflationary token on the <a className="lamden-link" href="https://lamden.io" target="_blank">Lamden</a> Blockchain!
         </div>
         <div className='linksSection' data-aos='fade-up' data-aos-delay='800'>
-          <button className="buy-button">Trade on RocketSwap</button>
+          <a target="_blank" href="https://rocketswap.exchange/#/swap/con_lambden_contract"><button className="buy-button">Trade on RocketSwap</button></a>
         </div>
         <div className="lamb-jump-animation-wrapper" data-aos='fade-up' data-aos-delay='800'>
           {/* {LambAnimation} */}
