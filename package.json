@@ -1,0 +1,30 @@
+{
+  "name": "lambden-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "lambden-web",
+  "author": "LAMBden",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "gatsby": "^3.10.1",
+    "gatsby-plugin-react-helmet": "^4.10.0",
+    "gatsby-plugin-sass": "^4.10.0",
+    "lottie-react": "^2.1.0",
+    "react": "^17.0.1",
+    "react-checkmark": "^1.4.0",
+    "react-countup": "^4.4.0",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.35.2"
+  }
+}
